@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "montserrat", serif;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    padding: min(5vh, 4rem);
+    background-color: #5f3711;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+header img {
+    width: 6rem;
+    height: 5rem;
+    
+}
+
+header div nav ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+ /*estilização do ícone do whatsapp*/
+.whatsapp {
+    position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+
+}
+
+/*Estilizando a imagem dentro da classe*/
+.whatsapp img {
+    position: fixed; /*Mantém a imagem em umaposição fixa na tela, mesmo rolando a tela */
+    bottom: 20px;  /*Define a distância da imagem em relação a parte inferior da tela*/
+    right: 20px; /*Define a distância da imagem em relação á direita da tela*/
+    height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporcão*/
+    width: 5rem;
+ 
+}
+
+
+
+.section-01 {
+    background-image: url(imagens/office-6804135_1280.jpg); /*imagem de fundo*/
+    background-attachment: fixed; /*Deixar a imagem de fundo fixada*/
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: cover; /*Deixar a imagem centralizada.*/
+    background-repeat: no-repeat; /*Usada para não repetir a imagem na sessão.*/
+    padding: min(20vh, 7rem); /*Tamanho da sessão*/
+    width: 100%;
+    
+   
+}
+
+.section-01 h1 {
+    font-size: 2.5em;
+    margin: 4.5rem;
+    text-align: center;
+    font-family: "Manrope", serif;
+    color: #f6f6e2;
+    
+}
+
+.section-01 span {
+        color: #dfb38c; /*Cor da letra*/
+           
+}
+
+
+.botao1 {
+    text-align: center; /*Usada para centralizar o botão*/
+    
+
+}
+
+/*Estilização do botão da section 01*/
+.section-01 button { 
+padding: 1.3em; /*Tamanho do preenchimento interno do botão*/
+border-radius: 10px; /*Borda arredondada do botão*/
+width: 12rem; /*Tamanho lateral do botão (largura)*/
+border-color: #5f3711; /*Cor da borda*/
+margin: 30px; /*Margem em volta do Button*/
+cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
+
+
+}
+
+.section-01 a button {
+ color: rgb(119, 136, 141); 
+
+}
+
+.section-02 {
+    background-color: #f7f6e4;
+    padding: min(20vh, 7rem);
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.section-02 h2 {
+    color: rgb(31, 27, 27);
+    font-size: 2.2em;
+    font-weight: 800;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.section-02 p {
+    color: rgb(31, 27, 27);
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.card img {
+    width: 80%;
+    height: 15rem auto;
+    opacity: 0.2;
+    transition: 0.5s;
+    flex-wrap: wrap;
+}
+
+.card img:hover {
+    transform: translateY(0px); /* Move o conteúdo para sua posição original ao passar o mouse */
+    opacity: 1; /* Aumenta a opacidade para 100% ao passar o mouse */
+    
+}
+
+
+
+.section-03 {
+    background-color: #f7f6e4;
+    padding: min(20vh, 7rem);
+    width: 100%;
+    
+    
+}
+
+.section-03 .line1 {
+    width: 50%; /*Largura da linha*/
+    margin: 9px auto; 
+
+}
+
+    
+
+.box {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.box1 img{
+    width: 20rem;
+    margin: 2rem auto;
+    display: block; 
+    flex-wrap: wrap;
+   
+    
+ }
+
+.box1 img:hover {
+    width: 22rem; /*Largura da Caixa*/
+    height: 15rem; /*Altura da caixa*/
+    transition: 0.8s; /*Tempo de transição*/
+    border-radius: 10px; /*Arredondamento da caixa*/
+}
+
+
+ 
+
+.section-04 {
+  
+    background-image: url(imagens/home-5835289_1280.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: min(20vh, 7rem);
+    width: 100%;
+    /* height: min(150vh, 40rem); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+.section-04 p {
+    color: rgb(2, 2, 2); /*Cor da letra*/
+    font-size: 2.5rem; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: bolder; /*Peso/Espressura da letra*/
+    text-align: center;
+    margin: 1.5em;
+   
+}
+
+.botao2 {
+    text-align: center; /*Usada para centralizar o botão*/
+    display: block;    
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+.section-04 button { 
+padding: 1.3em; /*Tamanho do preenchimento interno do botão*/
+border-radius: 10px; /*Borda arredondada do botão*/
+width: 12rem; /*Tamanho lateral do botão (largura)*/
+border-color: #5f3711; /*Cor da borda*/
+
+margin: 15px; /*Margem em volta do Button*/
+cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
+
+
+}
+
+.section-04 a button {
+ color: rgb(119, 136, 141); 
+
+}
+
+
+
+
+footer {
+    padding: min(5vh, 4rem); /*Tamanho/preenchimento do Footer*/
+    background-color: #5f3711; /*Cor de fundo*/
+    display: flex; /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly; /*Justificativa do conteúdo*/
+    gap: 15px; /*Espaçamento entre os elementos*/
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 0.21rem 0.5rem;
+    flex-wrap: wrap; /*QUEBRAR CONTEÚDO*/
+}
+
+/*Estilizando a logo do Footer*/
+footer .div-logo-footer img {
+    width: 6rem; /*Largura da imagem*/
+    height: 5rem; /*Altura da imagem*/
+
+}
+
+/*Estilizando o subtítulo do Footer*/
+footer div h3 {
+    color: #c7baa7; /*Cor da letra*/
+    font-size: 20px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: 300; /*Peso/Espressura da letra*/
+
+}
+
+/*Estilizando o parágrafo do Footer*/
+footer div p {
+    color: #e2d5c1; /*Cor da letra*/
+    font-size: 19px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: 200; /*Peso/Espressura da letra*/
+}
+
+/*Estilizando os ícones do Footer*/
+.div-sociais i {
+    padding: 10px; /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px; /*Tamanhos dos ícones*/
+    background-color: antiquewhite; /*Cor de fundo*/
+
+}
+
+
+/*Aplicando o hover nos ícones*/
+.div-sociais i:hover {
+    background-color: #d4c098; /*Cor de fundo*/
+    transition: 0.5s; /*Tempo de transição*/
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+.div-list-footer a {
+    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: #e2d5c1; /*Cor da Letra*/
+}
+
+
+
+@media (min-width:360px) and (max-width: 969px) {
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    header img {
+        width: 3rem;
+        height: 2rem;
+        
+    }
+
+    header a {
+        font-size: 0.5rem;
+    }
+
+    header nav{
+        display: none; /*escondendo o menu*/
+    }
+    
+
+    .section-01 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-01 h1 {
+        font-size: 1rem;
+        text-align: left;
+        margin: 1rem;
+        
+    }
+
+    .section-01 .botao1 {
+        width: 250px;
+        height: auto;
+        text-align: center;
+         margin: 1rem;
+    }
+
+    .section-02 {
+        padding: 1em;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .div1-section2 h2 {
+        font-size: 1.7rem;
+        line-height: 1.5;
+        text-align: left;
+        padding: 5rem;
+        margin: 0.5rem;
+        
+        
+    
+        
+    }
+
+    .div1-section2 p {
+        font-size: 1.5rem;
+        text-align: left;
+        flex-direction: row;
+        margin-right: 3rem;
+        margin: 3em;
+       
+    }
+
+
+
+   .section-03 {
+    padding: 13rem;
+
+   }
+
+    .section-04 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-04 p {
+    
+            font-size: 1.7rem;
+            text-align: center;
+            flex-direction: row;
+            margin-left: 10px;
+            width: 80%;
+            line-height: 1.3;
+            margin: 1em;
+    }
+
+    .section-04 .botao2 {
+        width: 250px;
+        height: auto;
+        text-align: end;
+        display: block;
+        flex-direction: column;
+         margin: 1rem;
+    }
+        
+
+    footer img {
+        width: 3rem;
+        height: 2rem;
+
+    }
+
+    footer p {
+        font-size: 0.1rem;
+    }
+
+    footer a {
+        font-size: 0.5rem;
+    }
+
+    footer i {
+        display: block;
+        margin-top: 10px;
+
+    }
+
+    
+
+
+    .whatsapp img {
+        width: 2rem;
+    }
+
