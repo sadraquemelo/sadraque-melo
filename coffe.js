@@ -1,0 +1,67 @@
+/*Estilo do container /do carrosel */
+.container-container {
+    overflow: hidden; /* Esconde partes das imagens que saem do container*/
+    width: 100%;/* O container ocupa toda a larguar da pagina */
+    max-width: 800px;/* Largura máxima para limitar em telas maiores */
+    margin: auto;/*Centraliza o container*/ 
+}
+
+/*Estilo da faixa de imagens */
+.carousel-track {
+    display: flex;/* Coloca as imagens lado a lado em linha*/
+    transition: transform 0.5s ease; /* Animação suave para transição*/
+}
+
+/* Cada item do carrosel */
+.carousel-item {
+    flex: 0 0 100%;/* Cada item dcupa 100% da larguara do container*/
+}
+
+img {
+    width: 100%;/* As imagens ocupam toda a largura do item*/
+    display:block ;/*Garante que não haja espaçamento abaixo das imgens */
+}/*Estilo do container /do carrosel */
+.container-container {
+    overflow: hidden; /* Esconde partes das imagens que saem do container*/
+    width: 100%;/* O container ocupa toda a larguar da pagina */
+    max-width: 800px;/* Largura máxima para limitar em telas maiores */
+    margin: auto;/*Centraliza o container*/ 
+}
+
+/*Estilo da faixa de imagens */
+.carousel-track {
+    display: flex;/* Coloca as imagens lado a lado em linha*/
+    transition: transform 0.5s ease; /* Animação suave para transição*/
+}
+
+/* Cada item do carrosel */
+.carousel-item {
+    flex: 0 0 100%;/* Cada item dcupa 100% da larguara do container*/
+}
+
+img {
+    width: 100%;/* As imagens ocupam toda a largura do item*/
+    display:block ;/*Garante que não haja espaçamento abaixo das imgens */
+}/*Estilo do container /do carrosel */
+.container-container {
+    overflow: hidden; /* Esconde partes das imagens que saem do container*/
+    width: 100%;/* O container ocupa toda a larguar da pagina */
+    max-width: 800px;/* Largura máxima para limitar em telas maiores */
+    margin: auto;/*Centraliza o container*/ 
+}
+
+/*Estilo da faixa de imagens */
+.carousel-track {
+    display: flex;/* Coloca as imagens lado a lado em linha*/
+    transition: transform 0.5s ease; /* Animação suave para transição*/
+}
+
+/* Cada item do carrosel */
+.carousel-item {
+    flex: 0 0 100%;/* Cada item dcupa 100% da larguara do container*/
+}
+
+img {
+    width: 100%;/* As imagens ocupam toda a largura do item*/
+    display:block ;/*Garante que não haja espaçamento abaixo das imgens */
+}
