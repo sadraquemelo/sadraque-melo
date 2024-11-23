@@ -1,67 +1,25 @@
-/*Estilo do container /do carrosel */
-.container-container {
-    overflow: hidden; /* Esconde partes das imagens que saem do container*/
-    width: 100%;/* O container ocupa toda a larguar da pagina */
-    max-width: 800px;/* Largura máxima para limitar em telas maiores */
-    margin: auto;/*Centraliza o container*/ 
-}
+//$(document).ready: Função que garante que o código dentro dela execute
+ //somente após o HTML completo da página estar carregado.
+ $(document).ready(function() {
 
-/*Estilo da faixa de imagens */
-.carousel-track {
-    display: flex;/* Coloca as imagens lado a lado em linha*/
-    transition: transform 0.5s ease; /* Animação suave para transição*/
-}
+    //Seleciona p contêiner . carousel e aplica a função slick()
+    // que ativa o carrossel com as configurações abaixo
+    $('.carousel').slick({
+        //slidesToShow: número de cards exibidos ao mesmo tempo no carrosel
+        slidesToShow: 3, //Exibe 3 cards ao mesmo tempo
 
-/* Cada item do carrosel */
-.carousel-item {
-    flex: 0 0 100%;/* Cada item dcupa 100% da larguara do container*/
-}
+        //slidsToScroll: define quantos cards serão deslizados ao mover o carrosel
+        slidesToShow: 1, //Move 1 card por vez ao deslizar
 
-img {
-    width: 100%;/* As imagens ocupam toda a largura do item*/
-    display:block ;/*Garante que não haja espaçamento abaixo das imgens */
-}/*Estilo do container /do carrosel */
-.container-container {
-    overflow: hidden; /* Esconde partes das imagens que saem do container*/
-    width: 100%;/* O container ocupa toda a larguar da pagina */
-    max-width: 800px;/* Largura máxima para limitar em telas maiores */
-    margin: auto;/*Centraliza o container*/ 
-}
+        //Infinite: quando true, o carrosel retorna ao início automaticamente 
+        infinite: true, // Mantém o carrosel em rotação continua
 
-/*Estilo da faixa de imagens */
-.carousel-track {
-    display: flex;/* Coloca as imagens lado a lado em linha*/
-    transition: transform 0.5s ease; /* Animação suave para transição*/
-}
+        //dots: quando true, ativa os pontos de navegação para os usários
+        dots: true, // Adiciona pontos de navegação para usúarios
 
-/* Cada item do carrosel */
-.carousel-item {
-    flex: 0 0 100%;/* Cada item dcupa 100% da larguara do container*/
-}
+        //arrows: exibe setas de navegação nas lateraís do carrosel 
+        arrows: true // Ativa as setas para navegar entre os cards
+    });
 
-img {
-    width: 100%;/* As imagens ocupam toda a largura do item*/
-    display:block ;/*Garante que não haja espaçamento abaixo das imgens */
-}/*Estilo do container /do carrosel */
-.container-container {
-    overflow: hidden; /* Esconde partes das imagens que saem do container*/
-    width: 100%;/* O container ocupa toda a larguar da pagina */
-    max-width: 800px;/* Largura máxima para limitar em telas maiores */
-    margin: auto;/*Centraliza o container*/ 
-}
 
-/*Estilo da faixa de imagens */
-.carousel-track {
-    display: flex;/* Coloca as imagens lado a lado em linha*/
-    transition: transform 0.5s ease; /* Animação suave para transição*/
-}
-
-/* Cada item do carrosel */
-.carousel-item {
-    flex: 0 0 100%;/* Cada item dcupa 100% da larguara do container*/
-}
-
-img {
-    width: 100%;/* As imagens ocupam toda a largura do item*/
-    display:block ;/*Garante que não haja espaçamento abaixo das imgens */
-}
+ });
